@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TPRouter-Swift_Example' do
+  pod 'TPRouter-Swift', :path => '../'
+
+  target 'TPRouter-Swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
