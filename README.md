@@ -22,7 +22,7 @@ pod 'TPRouter-Swift'
 
 ## Author
 
-周晓路, luyanggold@163.com
+Top, luyanggold@163.com
 
 ## License
 
