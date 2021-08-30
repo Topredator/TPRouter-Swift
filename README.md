@@ -28,11 +28,10 @@ Top, luyanggold@163.com
 
 TPRouter-Swift is available under the MIT license. See the LICENSE file for more info.
 
-## Use
-
+## Use Register
 ``` swift
 
- /*
+        /*
          情景1、使用正则表达式方式注册 xxx/:name1/:name2([0-9]+)
             正则表达式 作用：指定 传入参数的格式要求 (name1、name2为参数名)
             使用: xxx/xxx/123
@@ -56,5 +55,17 @@ TPRouter-Swift is available under the MIT license. See the LICENSE file for more
             }
             Navigator.push(vc)
         }
- 
+        
+```
+
+## Use 
+
+``` swift
+
+        // 使用 情景1
+        Router.shared.use("gotoSecond/跳转/15")
+        // 使用 场景 2-1
+        Router.shared.use("gotoSecond?name=\("跳转")&sex=\(9)")
+        // 使用 场景 2-2
+        Router.shared.use("gotoSecond", parameters: ["name": "跳转", "sex": 9])
 ```
