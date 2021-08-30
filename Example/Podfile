@@ -4,7 +4,7 @@ platform :ios, '9.0'
 
 target 'TPRouter-Swift_Example' do
   pod 'TPRouter-Swift', :path => '../'
-
+  pod 'TPUIKit-Swift'
   target 'TPRouter-Swift_Tests' do
     inherit! :search_paths
 

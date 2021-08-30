@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5343D58A26DCBC9E00352065 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343D58926DCBC9E00352065 /* SecondVC.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,8 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2066D88896144A8DF1C2BF86 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2066D88896144A8DF1C2BF86 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		364074984B95E539370AF6E2 /* Pods-TPRouter-Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPRouter-Swift_Example.release.xcconfig"; path = "Target Support Files/Pods-TPRouter-Swift_Example/Pods-TPRouter-Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5343D58926DCBC9E00352065 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		5E9264DE3514199C6A7A5E05 /* Pods_TPRouter_Swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPRouter_Swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* TPRouter-Swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TPRouter-Swift_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,8 +45,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6904163025C92ECF82078B96 /* Pods-TPRouter-Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPRouter-Swift_Example.debug.xcconfig"; path = "Target Support Files/Pods-TPRouter-Swift_Example/Pods-TPRouter-Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7F1FC6506A8DF77FA9B5B9E1 /* Pods-TPRouter-Swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPRouter-Swift_Tests.release.xcconfig"; path = "Target Support Files/Pods-TPRouter-Swift_Tests/Pods-TPRouter-Swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		826C8D104DD7A83B5919665B /* TPRouter-Swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "TPRouter-Swift.podspec"; path = "../TPRouter-Swift.podspec"; sourceTree = "<group>"; };
-		ACDB838054D80014AE42CC7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		826C8D104DD7A83B5919665B /* TPRouter-Swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "TPRouter-Swift.podspec"; path = "../TPRouter-Swift.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ACDB838054D80014AE42CC7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D0E88CCEEB17C5FD7EFDA1A3 /* Pods-TPRouter-Swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPRouter-Swift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TPRouter-Swift_Tests/Pods-TPRouter-Swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F400384E315B6871B9E724AE /* Pods_TPRouter_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPRouter_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				5343D58926DCBC9E00352065 /* SecondVC.swift */,
 			);
 			name = "Example for TPRouter-Swift";
 			path = "TPRouter-Swift";
@@ -147,7 +150,6 @@
 				D0E88CCEEB17C5FD7EFDA1A3 /* Pods-TPRouter-Swift_Tests.debug.xcconfig */,
 				7F1FC6506A8DF77FA9B5B9E1 /* Pods-TPRouter-Swift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,11 +272,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TPRouter-Swift_Example/Pods-TPRouter-Swift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TPFoundation-Swift/TPFoundation_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/TPRouter-Swift/TPRouter_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/TPUIKit-Swift/TPUIKit_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPFoundation_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPRouter_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPUIKit_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				5343D58A26DCBC9E00352065 /* SecondVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

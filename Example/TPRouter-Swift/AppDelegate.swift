@@ -7,40 +7,55 @@
 //
 
 import UIKit
+import TPRouter_Swift
+import TPUIKit_Swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        routeRegister()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        let navi = BaseNavigationController(rootViewController: ViewController())
+        navi.navigationBar.isTranslucent = false
+        window?.rootViewController = navi
+        window?.makeKeyAndVisible()
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
+    func routeRegister() {
+        /*
+         情景1、使用正则表达式方式注册 xxx/:name1/:name2([0-9]+)
+            正则表达式 作用：指定 传入参数的格式要求 (name1、name2为参数名)
+            使用: xxx/xxx/123
+         */
+        Router.shared.register("gotoSecond/:name/:sex([0-9]+)") {
+            let vc = SecondVC()
+            if let name = $0["name"] as? String, let sex = $0["sex"] {
+                vc.title = name + "\(sex)"
+            }
+            Navigator.push(vc)
+        }
+        /*
+         情景2、path 直接注册 xxxx/xxxx/xxxx
+         使用时分两种：a、path?param=[String: Any]
+                            b、url: path  parameters: [String: Any]
+         */
+        Router.shared.register("gotoSecond") {
+            let vc = SecondVC()
+            if let name = $0["name"] as? String, let sex = $0["sex"] {
+                vc.title = name + "\(sex)"
+            }
+            Navigator.push(vc)
+        }
+        
+        
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
 
 }
 

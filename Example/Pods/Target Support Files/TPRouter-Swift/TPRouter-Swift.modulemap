@@ -1,0 +1,6 @@
+framework module TPRouter_Swift {
+  umbrella header "TPRouter-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
